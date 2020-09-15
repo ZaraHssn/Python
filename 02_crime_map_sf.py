@@ -1,4 +1,4 @@
-# This script creates a dataframe with total number of crimes in each of the 10 neighborhoods in San Francisco and creates a Choropleth map map to visualize the data.
+# This script creates a dataframe with total number of crimes in each of the 10 neighborhoods in San Francisco and plots a Choropleth map map to visualize the data.
 # The San Francisco crime dataset is loaded from: https://cocl.us/sanfran_crime_dataset
 # and the GeoJSON file (defining boundaries of the neighborhoods in San Francisco) is taken from: https://cocl.us/sanfran_geojson
 
