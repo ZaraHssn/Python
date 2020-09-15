@@ -16,3 +16,5 @@ The script:
 1. loads the survey results saved to a csv file from: https://cocl.us/datascience_survey_data;
 2. converts the numbers to percentages of the total respondents;
 3. summarizes the survey results in a bar plot.
+
+I made this script as part of 'Data Visualization with Python' certification with IBM.
