@@ -42,13 +42,14 @@ y_test = np.asanyarray(df_test[['CO2EMISSIONS']])
 MSE_1 = np.mean((y_hat - y_test) ** 2)
 
 # actual and predicted emissions plotted vs engine size
+plt.figure(figsize=(8,6))
 plt.scatter(df_test.ENGINESIZE, df_test.CO2EMISSIONS,  color='blue')
 plt.plot(x_test[:,0], y_hat, '+r')
 plt.xlabel("Engine size")
 plt.ylabel("Emission")
 plt.title("Linear regression model using engine size and cylinders")
 plt.legend(['prediction','actual'],loc='lower right')
-plt.show()
+plt.savefig('LR1.png')
 
 # Model 2:
 
@@ -66,13 +67,14 @@ y_test = np.asanyarray(df_test[['CO2EMISSIONS']])
 MSE_2 = np.mean((y_hat - y_test) ** 2)
 
 # actual and predicted emissions plotted vs engine size
+plt.figure(figsize=(8,6))
 plt.scatter(df_test.ENGINESIZE, df_test.CO2EMISSIONS,  color='blue')
 plt.plot(x_test[:,0], y_hat, '+r')
 plt.xlabel("Engine size")
 plt.ylabel("Emission")
 plt.title("Linear regression model using engine size, cylinders, fuel consumption in city and highway")
 plt.legend(['prediction','actual'],loc='lower right')
-plt.show()
+plt.savefig('LR2.png')
 
 # comparing the MSEs:
 print("Addition of the fuel consumption parameters resulted in %.2f" %(abs(MSE_2-MSE_1)/MSE_1*100), "% improvement in mean squared error.")
