@@ -30,3 +30,14 @@ and the GeoJSON file (defining boundaries of the neighborhoods in San Francisco)
 I made this script as part of 'Data Visualization with Python' certification with IBM.
 
 ------------------------------------------------------------------------------------
+
+I created the script '03_car_emission_LR.py' based on my learnings from Machine Learning with Python (IBM).
+The dataset I used in this script is from: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-Coursera/labs/Data_files/FuelConsumptionCo2.csv
+The dataset includes the CO2 emissions of cars along with car information such as engine size, cylinders, fuel consumption in city and highway.
+
+Two multivariate linear regression models are implemented to estimate the car CO2 emissions. 
+In the first model two variables are used: engine size and cylinders, while in the second model fuel consumption in city and highway are also included.
+The improvements achieved by addition of the fuel consumption parameters are examined by comparing the mean square errors as well as 
+scatter plots of the predicted and actual emission rates for the test data set. 
+
+------------------------------------------------------------------------------------
