@@ -32,9 +32,9 @@ I made this script as part of 'Data Visualization with Python' certification wit
 ------------------------------------------------------------------------------------
 
 I created the '03_car_emission_LR.py' script based on my learnings from the Machine Learning with Python course, part of the IBM data science centification in Coursera.
-The dataset I used in this script is from: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-Coursera/labs/Data_files/FuelConsumptionCo2.csv
+The dataset I used in this script is from: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-Coursera/labs/Data_files/FuelConsumptionCo2.csv.
 The dataset includes the CO2 emissions of cars along with car information such as engine size, cylinders, fuel consumption in city and highway.
-80% of the data is randomly selected as the training set; and the rest as the test dataset. Model evaluation was performed using the test dataset.
+80% of the data is randomly selected as the training dataset; and the rest as the test dataset. Model evaluation was performed on the test dataset.
 
 I tested 3 multivariate linear regression models to estimate the car CO2 emissions. 
 In Model 1: I used engine size and cylinders to estimate emissions;
