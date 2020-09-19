@@ -31,13 +31,17 @@ I made this script as part of 'Data Visualization with Python' certification wit
 
 ------------------------------------------------------------------------------------
 
-I created the script '03_car_emission_LR.py' based on my learnings from Machine Learning with Python (IBM).
+I created the '03_car_emission_LR.py' script based on my learnings from the Machine Learning with Python course, part of the IBM data science centification in Coursera.
 The dataset I used in this script is from: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-Coursera/labs/Data_files/FuelConsumptionCo2.csv
 The dataset includes the CO2 emissions of cars along with car information such as engine size, cylinders, fuel consumption in city and highway.
+80% of the data is randomly selected as the training set; and the rest as the test dataset. Model evaluation was performed using the test dataset.
 
-Two multivariate linear regression models are implemented to estimate the car CO2 emissions. 
-In the first model two variables are used: engine size and cylinders, while in the second model fuel consumption in city and highway are also included.
-The improvements achieved by addition of the fuel consumption parameters are examined by comparing the mean square errors as well as 
-scatter plots of the predicted and actual emission rates for the test data set. 
+I tested 3 multivariate linear regression models to estimate the car CO2 emissions. 
+In Model 1: I used engine size and cylinders to estimate emissions;
+In Model 2: I used engine size, cylinders as well as the fuel consumption in city and highway to estimate emissions;
+In Model 3: I used same features as in Model 2 but this time used a 2nd degree polynomial fitting on engine size.
+To get a sense of accuracy of the models, I created scatter plots of predicted and actual emissions vs engine size on the test dataset.
+I also looked at mean absolute and squared errors, and R2 score to compare the model results quantitatively.
+While addition of fuel consumption improved the predictions largely, the polynomial fitting of the engine size did not result in significant improvements.
 
 ------------------------------------------------------------------------------------
