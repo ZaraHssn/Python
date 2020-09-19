@@ -117,7 +117,7 @@ plt.scatter(df_test.ENGINESIZE, df_test.CO2EMISSIONS,  color='blue')
 plt.plot(x_test[:,1], y_hat, '+r')
 plt.xlabel("Engine size")
 plt.ylabel("Emission")
-plt.title("Linear regression model using cylinders, fuel consumption and 2nd degree polynomial fitting of engine size")
+plt.title("Linear regression model using cylinders, fuel consumption \n and 2nd degree polynomial fitting of engine size")
 
 # evaluate the accuracy of the predictions using different metrics 
 print("Mean Absolute Error (MAE): %.2f" % np.mean(np.absolute(y_hat - y_test)))
