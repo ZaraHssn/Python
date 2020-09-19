@@ -117,6 +117,7 @@ plt.scatter(df_test.ENGINESIZE, df_test.CO2EMISSIONS,  color='blue')
 plt.plot(x_test[:,1], y_hat, '+r')
 plt.xlabel("Engine size")
 plt.ylabel("Emission")
+plt.legend(['prediction','actual'],loc='lower right')
 plt.title("Linear regression model using cylinders, fuel consumption \n and 2nd degree polynomial fitting of engine size")
 
 # evaluate the accuracy of the predictions using different metrics 
